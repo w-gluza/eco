@@ -16,8 +16,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	top:0 px;
 	position:absolute;
 	z-index:999;
-	background-color: #000;
-	opacity:0.8;
+	background-color: #002535;
+	opacity:0.7;
 	padding-top: 10px;
 	text-decoration: none;
 	text-align: center;
@@ -41,14 +41,14 @@ h1, p {
 
 h1 {
 	font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
   margin-bottom: 15px;
 }
 
 p {
 	font-size: 1.4em;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 150%;
 	margin-bottom: 1.1em;
 
