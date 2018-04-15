@@ -40,16 +40,10 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   padding-left: 1.5%;
 }
 
-h1, p {
-	font-family: 'Montserrat', sans-serif;
-	margin-left: 10%;
-	margin-right: 10%;
-	color: #9AACB8
-}
-
-
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 10%;
+  margin-left: 10%;
 	font-size: 2.7em;
   font-weight: 300;
   line-height: 120%;
@@ -57,33 +51,52 @@ h1 {
   color: #f9d315;
 }
 
+h2, h3, h4, .mail {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #f9d315;
+  font-weight: 300;
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 300;
+  color: #9AACB8;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+}
+
+.mail {
+    font-size: 1.4em;
+    color: #f9d315;
+    font-weight: 300;
+    text-decoration: none;
+    bottom: 100px;
+}
+
 p {
+  font-family: 'Montserrat', sans-serif;
 	font-size: 1.4em;
 	font-weight: 300;
 	line-height: 150%;
 	margin-bottom: 1.1em;
-
-}
-.banner {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  color: #fff;
-  z-index: 20;
-  font-size: 1.7em;
-  position: absolute;
-  bottom: 5%;
-  left: 37%;
+  color: #9AACB8;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.dateBig{
-  font-size: 2.08em;
 
+
+.contact {
+  margin-top: 5%;
+  margin-left: 64%;
 }
-.dateSmall{
-  font-size: 1.9em;
 
 
-}
 /* Backgrounds will cover all the section */
 #section1,
 #section2,
@@ -126,10 +139,24 @@ background-size: cover;
 }
 /* CONTACT */
 #section6{
+    background-image: url(contact.png);
     padding: 6% 0 0 0;
 		background-color: #073952
 
 }
+
+.social {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+
+.iconSocial {
+  height: 50px;
+  width: auto;
+  padding-right: 5px;
+}
+
 
 iframe {
     display: block;
@@ -138,4 +165,20 @@ iframe {
     height: 100vh;
     width: 100vw;
 		overflow: scroll;
+}
+
+.flash-wrapper {
+    max-width: 100%; /*For responsiveness purposes*/
+    overflow: hidden; /*To wrap around everything inside*/
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /*The following only applies when the object is declared after the overlay. The overlay needs a higher z-index number*/
+    z-index: 100;
 }
