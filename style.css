@@ -194,9 +194,9 @@ iframe {
     padding: 0 0 0 0;
 }
 
-/* INFOGRAPHIC * <---working on mobile infographic/
+/* INFOGRAPHIC * <---working on mobile infographic*/
 #section5{
-    background-image: none;
+    background-image: url(infographicMobile.png);
     background-color: #0b4b62;
 }
 /* CONTACT  <---- we will not have graphic on mobile just text*/
