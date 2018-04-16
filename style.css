@@ -175,9 +175,9 @@ iframe {
 .overlay {
     position: absolute;
     top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    bottom: 5%;
+    right: 5%;
+    left: 55%;
     /*The following only applies when the object is declared after the overlay. The overlay needs a higher z-index number*/
     z-index: 100;
 }
