@@ -14,6 +14,10 @@
 
 <body>
 
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+
+
+
   <nav id="navbar">
     <img class="logo" src="plearthLogoWeb.png">
     <a href="#firstPage">HOME</a>
@@ -22,8 +26,35 @@
     <a href="#4thPage">HISTORY</a>
     <a href="#5thPage">INFOGRAPHIC</a>
     <a href="#lastPage">CONTACT</a>
+    <span id ="burgerIcon" onClick="openOverlayMenu()">&#9776;</span>
 
   </nav>
+
+
+    <!-- The overlay -->
+<div id="overlayNav" class="overlayMenu">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <img class="logoB" src="plearthLogoWeb.png">
+    <a href="#firstPage">HOME</a>
+    <a href="#secondPage">ABOUT</a>
+    <a href="#3rdPage">VIDEO</a>
+    <a href="#4thPage">HISTORY</a>
+    <a href="#5thPage">INFOGRAPHIC</a>
+    <a href="#lastPage">CONTACT</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+
+
+
+
 
   <div id="fullpage">
     <div class="section " id="section1" data-anchor="firstPage">
@@ -98,6 +129,9 @@
   </div>
 
 <script type="text/javascript" src="javascript.fullPage.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+
 <script type="text/javascript">
 	fullpage.initialize('#fullpage', {
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', 'lastPage'],
